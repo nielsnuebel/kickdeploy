@@ -12,11 +12,9 @@
 
     <files>
         <filename plugin="kickdeploy">kickdeploy.php</filename>
-        <filename>index.html</filename>
         <folder>fields</folder>
         <folder>js</folder>
         <folder>language</folder>
-        <folder>libraries</folder>
     </files>
     <config>
         <fields name="params">
