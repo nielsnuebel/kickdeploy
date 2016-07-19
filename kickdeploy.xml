@@ -7,13 +7,12 @@
     <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
     <authorEmail>info@kicktemp.com</authorEmail>
     <authorUrl>www.kicktemp.com</authorUrl>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <description>PLG_SYSTEM_KICKDEPLOY_XML_DESCRIPTION</description>
 
     <files>
         <filename plugin="kickdeploy">kickdeploy.php</filename>
         <folder>fields</folder>
-        <folder>js</folder>
         <folder>language</folder>
     </files>
     <config>
