@@ -1,0 +1,17 @@
+<updates>
+    <update>
+        <name>System - Kickdeploy</name>
+        <element>kickdeploy</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <client>0</client>
+        <version>0.0.1</version>
+        <downloads>
+            <downloadurl type="upgrade" format="zip">https://github.com/nielsnuebel/kickdeploy/archive/0.0.1.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <targetplatform name="joomla" version="3.*"/>
+    </update>
+</updates>

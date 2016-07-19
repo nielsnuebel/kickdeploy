@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+    <name>plg_system_kickdeploy</name>
+    <author>kicktemp</author>
+    <creationDate>22 June 2016</creationDate>
+    <copyright>(C) 2016 kicktemp.com</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>info@kicktemp.com</authorEmail>
+    <authorUrl>www.kicktemp.com</authorUrl>
+    <version>0.0.1</version>
+    <description>PLG_SYSTEM_KICKDEPLOY_XML_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="kickdeploy">kickdeploy.php</filename>
+        <filename>index.html</filename>
+        <folder>fields</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>libraries</folder>
+    </files>
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic" addfieldpath="/plugins/system/kickdeploy/fields/">>
+                <field name="errorMail" type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKDEPLOY_ERRORMAIL_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_ERRORMAIL_DESC"
+                />
+                <field  name="sendInfoMails"
+                        type="radio"
+                        class="btn-group"
+                        default="0"
+                        label="PLG_SYSTEM_KICKDEPLOY_SEND_INFO_MAILS_LABEL"
+                        description="PLG_SYSTEM_KICKDEPLOY_SEND_INFO_MAILS_DESC"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="infoMail" type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKDEPLOY_INFOMAIL_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_INFOMAIL_DESC"
+                />
+                <field name="infoSubject" type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKDEPLOY_INFOSUBJECT_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_INFOSUBJECT_DESC"
+                />
+                <field name="git" type="text"
+                       default="/usr/local/bin/git"
+                       label="PLG_SYSTEM_KICKDEPLOY_ERRORMAIL_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_ERRORMAIL_DESC"
+                />
+                <field name="repo" type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKDEPLOY_REPO_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_REPO_DESC"
+                />
+                <field name="branch" type="text"
+                       default="master"
+                       label="PLG_SYSTEM_KICKDEPLOY_BRANCH_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_BRANCH_DESC"
+                />
+                <field name="remote" type="text"
+                       default="origin"
+                       label="PLG_SYSTEM_KICKDEPLOY_REMOTE_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_REMOTE_DESC"
+                />
+                <field name="hookSecret" type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKDEPLOY_HOCKSECRET_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_HOCKSECRET_DESC"
+                />
+                <field  name="checkHookSecret"
+                        type="radio"
+                        class="btn-group"
+                        default="0"
+                        label="PLG_SYSTEM_KICKDEPLOY_CHECKHOOKSECRET_LABEL"
+                        description="PLG_SYSTEM_KICKDEPLOY_CHECKHOOKSECRET_LABEL"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+            <fieldset name="sshkey" label="PLG_KICKDEPLOY_FIELDSET_SSHKEY_LABEL">
+                <field name="publickey_path"
+                       label="PLG_SYSTEM_KICKDEPLOY_PUBLICKEY_PATH_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_PUBLICKEY_PATH_DESC"
+                       type="publickey"
+                />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="PLG_SYSTEM_KICKDEPLOY">https://raw.githubusercontent.com/nielsnuebel/kickdeploy/master/update.xml</server>
+    </updateservers>
+</extension>
