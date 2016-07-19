@@ -46,8 +46,8 @@
                 />
                 <field name="git" type="text"
                        default="/usr/local/bin/git"
-                       label="PLG_SYSTEM_KICKDEPLOY_ERRORMAIL_LABEL"
-                       description="PLG_SYSTEM_KICKDEPLOY_ERRORMAIL_DESC"
+                       label="PLG_SYSTEM_KICKDEPLOY_GITPATH_LABEL"
+                       description="PLG_SYSTEM_KICKDEPLOY_GITPATH_DESC"
                 />
                 <field name="repo" type="text"
                        default=""
