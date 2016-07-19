@@ -5,9 +5,9 @@
         <type>plugin</type>
         <folder>system</folder>
         <client>0</client>
-        <version>0.0.3</version>
+        <version>0.0.5</version>
         <downloads>
-            <downloadurl type="upgrade" format="zip">https://github.com/nielsnuebel/kickdeploy/archive/0.0.3.zip</downloadurl>
+            <downloadurl type="upgrade" format="zip">https://github.com/nielsnuebel/kickdeploy/archive/0.0.5.zip</downloadurl>
         </downloads>
         <tags>
             <tag>stable</tag>
